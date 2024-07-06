@@ -1,6 +1,6 @@
 # Demo "Paginas soltas" Next.js App
 
-This app is running in Vercel, [https://next-programadores.vercel.app/](https://next-paginas-soltas.vercel.app/temperatura)
+This app is running in Vercel, [https://next-paginas-soltas.vercel.app/](https://next-paginas-soltas.vercel.app/)
 
 <img width="513" alt="image" src="https://github.com/ULHT-PW/next-paginas-soltas/assets/42048382/0a454176-d4ac-418c-aa44-b8733c025314">
 
