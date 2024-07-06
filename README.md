@@ -2,7 +2,8 @@
 
 This app is running in Vercel, [https://next-programadores.vercel.app/](https://next-paginas-soltas.vercel.app/temperatura)
 
-<img width="492" alt="image" src="https://github.com/ULHT-PW/next-paginas-soltas/assets/42048382/ad81444d-0200-4ec1-b7ec-f851f988bfe3">
+<img width="468" alt="image" src="https://github.com/ULHT-PW/next-paginas-soltas/assets/42048382/0f5f343e-0505-4e84-8c32-ef066f1c9af6">
+
 
 
 
