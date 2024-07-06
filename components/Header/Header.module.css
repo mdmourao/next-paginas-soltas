@@ -1,8 +1,9 @@
 .header {
   background: none;
   color: white;
-  font-weight:bold;
+  font-weight: bold;
   padding: 15px;
+  margin-bottom:15px;
 }
 
 .header h1 {
@@ -18,14 +19,29 @@
   justify-content: space-between;
 }
 
-.nav a {
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
-  font-weight:normal;
   color: white;
+  position: relative;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.icon {
+  font-size: 1.5em;
+}
+
+.linkText {
+  font-weight: normal;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  bottom: -20px; /* Adjust this value as needed */
+}
+
+.link:hover .linkText {
+  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
