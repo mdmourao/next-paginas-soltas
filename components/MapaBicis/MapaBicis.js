@@ -134,7 +134,7 @@ const Mapa = () => {
   return (
     <div>
       <h1>Bicicletas Gira</h1>
-      <p>Mapa das docas Gira e suas bicicletas.</p>
+      <p>Mapa das docas Gira e suas bicicletas. Veja quantas existem disponíveis!</p>
       <div id="map" className={styles.map}></div>
     </div>
   );
