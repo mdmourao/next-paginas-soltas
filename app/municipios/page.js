@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react'
 import Municipios from '../../components/Municipios/Municipios'
 

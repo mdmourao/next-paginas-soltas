@@ -1,3 +1,9 @@
+
+# Open issues
+
+* `useSWR` is not working properly in IPMA and GIRA pages. json is hardcoded 
+
+
 # Paginas soltas, Next.js App
 
 This app is running in Vercel, [https://next-paginas-soltas.vercel.app/](https://next-paginas-soltas.vercel.app/)
@@ -5,6 +11,7 @@ This app is running in Vercel, [https://next-paginas-soltas.vercel.app/](https:/
 <img width="513" alt="image" src="https://github.com/ULHT-PW/next-paginas-soltas/assets/42048382/0a454176-d4ac-418c-aa44-b8733c025314">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 

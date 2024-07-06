@@ -1,5 +1,5 @@
-// page.js
-import dynamic from 'next/dynamic';
+
+import React from 'react'
 import MapaBicis from '../../components/MapaBicis/MapaBicis'
 
 export default function page() {

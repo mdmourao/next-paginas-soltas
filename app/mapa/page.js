@@ -1,5 +1,5 @@
 // page.js
-import dynamic from 'next/dynamic';
+import React from 'react'
 import Mapa from '../../components/Mapa/Mapa'
 
 export default function page() {

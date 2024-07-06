@@ -3,8 +3,8 @@
 
 import { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import styles from './Mapa.module.css';
+// import 'mapbox-gl/dist/mapbox-gl.css';
+import styles from './MapaBicisGira.module.css';
 
 // Example GeoJSON data (replace with your actual data)
 import bikeLanesData from '../../public/gira.json';
