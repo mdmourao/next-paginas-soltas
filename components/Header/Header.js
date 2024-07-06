@@ -11,7 +11,8 @@ export default function Header() {
         <Link href="/municipios">Municipios</Link>
         <Link href="/temperatura">Tempo</Link>
         <Link href="/mapa">Mapa</Link>
-        <Link href="/mapaBicis">Bicis Gira</Link>
+        <Link href="/mapaBicis">Bicis</Link>
+        <Link href="/graphs">Gráficos</Link>
       </nav>
     </header>
   )
