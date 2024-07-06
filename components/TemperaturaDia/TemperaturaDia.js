@@ -41,15 +41,16 @@ export default function TemperaturaDia({ forecast, weatherTypeMap }) {
 
   return (
     <div className={styles.day}>
-      <div>
-        <div className={styles.date}>{date}</div>
-        <div>{weatherTypeMap[forecast.idWeatherType]}</div>
-         <div className={styles.temperature}>
-          <div style={{ background: '#03a9f4', padding: '5px 10px', borderRadius:'5px' }}>{forecast.tMin}°C</div>
-          <div style={{ background: 'orange', padding: '5px 10px', borderRadius:'5px' }}>{forecast.tMax}°C</div>
+      <div className={styles.date}>{date}</div>
+      <div className={styles.info}>
+        <div>
+          <div>{weatherTypeMap[forecast.idWeatherType]}</div>
+          <div className={styles.temperature}>
+            <div style={{ background: '#03a9f4', padding: '5px 10px', borderRadius: '5px' }}>{forecast.tMin}°C</div>
+            <div style={{ background: 'orange', padding: '5px 10px', borderRadius: '5px' }}>{forecast.tMax}°C</div>
+          </div>
         </div>
-      </div>
-      <div>
+
         <Image
           src={`/icons_ipma_weather/${iconWeather}`}
           alt="Weather icon"

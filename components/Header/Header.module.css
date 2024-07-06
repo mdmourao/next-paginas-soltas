@@ -2,7 +2,7 @@
   background: none;
   color: white;
   font-weight:bold;
-  padding: 20px;
+  padding: 15px;
 }
 
 .header h1 {
@@ -14,18 +14,17 @@
 .nav {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  justify-content: center;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .nav a {
   text-decoration: none;
+  font-weight:normal;
   color: white;
 }
 
 .nav a:hover {
   text-decoration: underline;
-  /* color: rgb(221, 221, 221); */
-
 }
 

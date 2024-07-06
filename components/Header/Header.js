@@ -7,9 +7,11 @@ export default function Header() {
     <header className={styles.header}>
       <h1>Páginas Soltas</h1>
       <nav className={styles.nav}>
-        <Link href="/">Home →</Link>
-        <Link href="/municipios">Municipios →</Link>
-        <Link href="/temperatura">Tempo →</Link>
+        <Link href="/">Home</Link>
+        <Link href="/municipios">Municipios</Link>
+        <Link href="/temperatura">Tempo</Link>
+        <Link href="/mapa">Mapa</Link>
+        <Link href="/mapaBicis">Gira</Link>
       </nav>
     </header>
   )

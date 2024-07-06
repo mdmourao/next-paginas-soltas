@@ -29,6 +29,7 @@ export default function Temperatura() {
   return (
     <>
       <h2>Tempo</h2>
+      <p>Informação extraída da <a href="https://api.ipma.pt/" target="_blank">API do IPMA</a>.</p>
       {weatherData.data.slice(0, 3).map(
         (forecast, index) =>
           <TemperaturaDia

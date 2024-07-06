@@ -19,7 +19,7 @@ export default function Municipios() {
   return (
     <div>
       <h2>Municípios</h2>
-      <p>Lista extraída de https://api.carrismetropolitana.pt/municipalities</p>
+      <p>Extraído da <a href="https://api.carrismetropolitana.pt" target="_blank">API da CarrisMetropolitana</a></p>
       <ul>
         {municipalities.map(municipality => (
           <li key={municipality.id}>{municipality.name}</li>

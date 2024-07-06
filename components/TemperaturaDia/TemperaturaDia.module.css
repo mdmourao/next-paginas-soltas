@@ -3,27 +3,27 @@
   background: white;
   border-radius: 10px;
   margin: 10px;
+  
+}
+
+.info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.day div:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  align-items:center;
   gap: 5px;
 }
 
 
 .date {
-  font-weight: bold;;
+  font-weight: bold;
 } 
 
 .temperature {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 15px;
   color: white;
+  margin-top: 5px;
 }
