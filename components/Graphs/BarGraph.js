@@ -37,7 +37,7 @@ const data = {
 const BarChart = () => {
   return (
     <div>
-      <h2>Gráfico de Barras</h2>
+      <h4>Utilização de Browsers em Portugal</h4>
       <Bar data={data} />
     </div>
   );

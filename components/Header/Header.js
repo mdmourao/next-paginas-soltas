@@ -13,6 +13,7 @@ export default function Header() {
         <Link href="/mapa">Mapa</Link>
         <Link href="/mapaBicis">Bicis</Link>
         <Link href="/graphs">Gráficos</Link>
+        {/* <Link href="/calendar">Calendario</Link> */}
       </nav>
     </header>
   )

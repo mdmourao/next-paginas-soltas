@@ -5,8 +5,10 @@ import LineGraph from './LineGraph'
 export default function Graphs() {
   return (
     <div>
-      <h1>Exemplos de gráficos</h1>
+      <h1>Gráficos</h1>
+      <br></br>
       <BarGraph />
+      <br></br>
       <LineGraph />
     </div>
   )

@@ -134,8 +134,10 @@ const Mapa = () => {
   return (
     <div>
       <h1>Bicicletas Gira</h1>
-      <p>Mapa das docas Gira e suas bicicletas. Procure no mapa as docas 🚲, clique e veja quantas existem disponíveis!</p>
-      <div id="map" className={styles.map}></div>
+      <p>Mapa com as docas Gira em Lisboa.</p>
+      <p> Procure no mapa as docas 🚲, clique e veja quantas existem disponíveis!</p>
+      <div id="map" className={styles.map}>
+      </div>
     </div>
   );
 };

@@ -23,7 +23,7 @@ const data = {
 const LineChart = () => {
   return (
     <div>
-      <h2>Gráfico de Linhas</h2>
+      <h4>Utilização da Internet em Portugal</h4>
       <Line data={data} />
     </div>
   );
