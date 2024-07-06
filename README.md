@@ -1,4 +1,4 @@
-# Demo "Paginas soltas" Next.js App
+# Paginas soltas, Next.js App
 
 This app is running in Vercel, [https://next-paginas-soltas.vercel.app/](https://next-paginas-soltas.vercel.app/)
 
