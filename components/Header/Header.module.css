@@ -1,14 +1,21 @@
 .header {
-  background: #E91E63;
+  background: none;
   color: white;
+  font-weight:bold;
   padding: 20px;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .nav a {
@@ -17,7 +24,8 @@
 }
 
 .nav a:hover {
-  text-decoration: none;
-  color: rgb(221, 221, 221);
+  text-decoration: underline;
+  /* color: rgb(221, 221, 221); */
+
 }
 

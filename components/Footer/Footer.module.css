@@ -1,6 +1,8 @@
 .footer {
-  background: purple;
+  background: none;
   color: white;
-  padding: 20px;
+  font-weight:bold;
+  padding: 10px;
+  text-align: center;
 }
 
