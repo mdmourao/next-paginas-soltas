@@ -11,15 +11,15 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibHVjaW8tc3R1ZGVyIiwiYSI6ImNsMDlraG05ZTAxN3gza
 
 const Mapa = () => {
 
-
   //
   // usa route que faz fetch a API EMEL/GIRA e retorna dados
   const { data: bikeLanesData, error } = useSWR('/api/gira/availability');
-  if (error) return <div>Error loading data</div>;
-  if (!bikeLanesData) return <div>Loading bikeLanesData...</div>;
-
 
   useEffect(() => {
+
+    if (error) return <div>Error loading data</div>;
+    if (!bikeLanesData) return <div>Loading bikeLanesData...</div>;
+
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/outdoors-v11',
@@ -123,7 +123,7 @@ const Mapa = () => {
     // Clean up map instance on component unmount
     return () => map.remove();
 
-  }, []);
+  }, [bikeLanesData, bikeLanesData?.features, error]);
 
   return (
     <div>
