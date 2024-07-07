@@ -152,7 +152,7 @@ const Mapa = () => {
   return (
     <div>
       <h1>Mapa</h1>
-      <p>Exemplo de mapa MapBox com a localização do utilizador. Procure um ponto e um polígono!</p>
+      <p>Exemplo de mapa com a localização do utilizador. Procure um ponto e um polígono!</p>
       <div id="map" className={styles.map}></div>
     </div>
   );

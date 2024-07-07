@@ -7,21 +7,13 @@ import mapboxgl from 'mapbox-gl';
 import styles from './MapaBicisGira.module.css';
 
 
-//
-// hardcoded... devido 
-
-import bikeLanesData from '../../public/gira.json';
-
-
 mapboxgl.accessToken = 'pk.eyJ1IjoibHVjaW8tc3R1ZGVyIiwiYSI6ImNsMDlraG05ZTAxN3gzam56eDVwc3o4enQifQ.WL9qChb0N0-WqvqS6QThjg';
 
 const Mapa = () => {
 
   //
   // usa route que faz fetch a API EMEL/GIRA e retorna dados
-  // mas nao funciona...
-
-  // const { data: bikeLanesData, error } = useSWR('/api/gira/availability');
+  const { data: bikeLanesData, error } = useSWR('/api/gira/availability');
 
   useEffect(() => {
 
