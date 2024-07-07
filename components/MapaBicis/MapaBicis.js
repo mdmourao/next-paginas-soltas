@@ -8,12 +8,30 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './Mapa.module.css';
+import useSWR from 'swr';
 
 import bikeLanesGeoJSON from '../../public/gira.json';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibHVjaW8tc3R1ZGVyIiwiYSI6ImNsMDlraG05ZTAxN3gzam56eDVwc3o4enQifQ.WL9qChb0N0-WqvqS6QThjg';
 
+
 const Mapa = () => {
+
+  //
+  // not working Fetch bike lanes data using useSWR from proxy server
+
+  // const { data: bikeLanesGeoJSON, error } = useSWR('/proxy/station/availability');
+  // if (error) return <div>Error loading data</div>;
+  // if (!bikeLanesGeoJSON) return <div>Loading bikeLanesData...</div>;
+
+  //
+  // not working Fetch bike lanes data using useSWR from serverless handler in /app/api/gira/availability
+
+  // const { data: bikeLanesData, error } = useSWR('/api/gira/availability');
+  // if (error) return <div>Error loading data</div>;
+  // if (!bikeLanesData) return <div>Loading bikeLanesData...</div>;
+
+
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: 'map',

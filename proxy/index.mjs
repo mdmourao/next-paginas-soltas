@@ -12,7 +12,7 @@ app.use(cors());
 //
 // Route for GIRA API
 
-app.get('/api/station/availability', async (req, res) => {
+app.get('/proxy/station/availability', async (req, res) => {
   const apiUrl = 'https://opendata.emel.pt/cycling/gira/station/availability';
   
   try {

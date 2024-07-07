@@ -1,5 +1,6 @@
 "use client";
 
+import useSWR from 'swr';
 import { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 // import 'mapbox-gl/dist/mapbox-gl.css';
@@ -10,13 +11,12 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibHVjaW8tc3R1ZGVyIiwiYSI6ImNsMDlraG05ZTAxN3gza
 
 const Mapa = () => {
 
+
   //
-  // usa proxy server para contornar CORS
-  // path relativo /api/station/availability 
- 
-  const { data: bikeLanesData, error } = useSWR('/api/station/availability');
+  // usa route que faz fetch a API EMEL/GIRA e retorna dados
+  const { data: bikeLanesData, error } = useSWR('/api/gira/availability');
   if (error) return <div>Error loading data</div>;
-  if (!weatherData) return <div>Loading weatherData...</div>;
+  if (!bikeLanesData) return <div>Loading bikeLanesData...</div>;
 
 
   useEffect(() => {

@@ -7,8 +7,8 @@ export default {
   async rewrites() {
     return [
       {
-        source: '/api/station/availability',
-        destination: `http://localhost:5000/api/station/availability`,
+        source: '/proxy/station/availability',
+        destination: `http://localhost:3000/proxy/station/availability`,
       },
     ];
   },
@@ -24,3 +24,4 @@ export default {
     return config;
   },
 };
+
