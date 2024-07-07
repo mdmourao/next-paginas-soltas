@@ -27,9 +27,9 @@ const Mapa = () => {
   //
   // not working Fetch bike lanes data using useSWR from serverless handler in /app/api/gira/availability
 
-  // const { data: bikeLanesData, error } = useSWR('/api/gira/availability');
+  // const { data: bikeLanesGeoJSON, error } = useSWR('/api/gira/availability');
   // if (error) return <div>Error loading data</div>;
-  // if (!bikeLanesData) return <div>Loading bikeLanesData...</div>;
+  // if (!bikeLanesGeoJSON) return <div>Loading bikeLanesGeoJSON...</div>;
 
 
   useEffect(() => {
