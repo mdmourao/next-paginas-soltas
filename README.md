@@ -1,7 +1,7 @@
 
 # Open issues
 
-* `useSWR` is not working properly in IPMA and GIRA pages. json is hardcoded 
+* `useSWR` is not working properly in IPMA with proxy server, although proxy server is working well for GIRA pages. for weather, json is hardcoded.  
 
 
 # Paginas soltas, Next.js App
@@ -10,26 +10,16 @@ This app is running in Vercel, [https://next-paginas-soltas.vercel.app/](https:/
 
 <img width="513" alt="image" src="https://github.com/ULHT-PW/next-paginas-soltas/assets/42048382/0a454176-d4ac-418c-aa44-b8733c025314">
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
 ## Getting Started
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Run the development server: `npm run dev`
+* Run the proxy server `node proxy/index.js`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 

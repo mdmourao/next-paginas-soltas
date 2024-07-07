@@ -1,5 +1,5 @@
 'use client';
-
+import React from 'react'
 import { SWRConfig } from 'swr';
 import { MantineProvider } from '@mantine/core';
 
@@ -33,3 +33,4 @@ export default function Providers({ children }) {
     </SWRConfig>
   );
 }
+

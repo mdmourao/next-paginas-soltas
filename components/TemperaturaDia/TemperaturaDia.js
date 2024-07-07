@@ -23,7 +23,7 @@ function isNight() {
 }
 
 
-export default function TemperaturaDia({ forecast, weatherTypeMap }) {
+export default function TemperaturaDia({ forecast, weatherTypeMap, windTypeMap }) {
 
 
   //
@@ -37,14 +37,14 @@ export default function TemperaturaDia({ forecast, weatherTypeMap }) {
   };
 
   const date = new Date(forecast.forecastDate).toLocaleDateString('pt-PT', options);
-  const iconWeather = `w_ic_${isNight() ? 'n' : 'd'}_${forecast.idWeatherType.toString().padStart(2, '0')}anim.svg`
+  const iconWeather = `w_ic_${isNight() ? 'd' : 'd'}_${forecast.idWeatherType.toString().padStart(2, '0')}anim.svg`
 
   return (
     <div className={styles.day}>
       <div className={styles.date}>{date}</div>
       <div className={styles.info}>
         <div>
-          <div>{weatherTypeMap[forecast.idWeatherType]}</div>
+          <div>{weatherTypeMap[forecast.idWeatherType]}. Vento {windTypeMap[forecast.classWindSpeed]}.</div>
           <div className={styles.temperature}>
             <div style={{ background: '#03a9f4', padding: '5px 10px', borderRadius: '5px' }}>{forecast.tMin}°C</div>
             <div style={{ background: 'orange', padding: '5px 10px', borderRadius: '5px' }}>{forecast.tMax}°C</div>

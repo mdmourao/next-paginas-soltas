@@ -1,4 +1,3 @@
-// components/Mapa.js
 "use client";
 
 import { useEffect } from 'react';
@@ -6,12 +5,19 @@ import mapboxgl from 'mapbox-gl';
 // import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './MapaBicisGira.module.css';
 
-// Example GeoJSON data (replace with your actual data)
-import bikeLanesData from '../../public/gira.json';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibHVjaW8tc3R1ZGVyIiwiYSI6ImNsMDlraG05ZTAxN3gzam56eDVwc3o4enQifQ.WL9qChb0N0-WqvqS6QThjg';
 
 const Mapa = () => {
+
+  //
+  // usa proxy server para contornar CORS
+  // path relativo /api/station/availability 
+ 
+  const { data: bikeLanesData, error } = useSWR('/api/station/availability');
+  if (error) return <div>Error loading data</div>;
+  if (!weatherData) return <div>Loading weatherData...</div>;
+
 
   useEffect(() => {
     const map = new mapboxgl.Map({
@@ -22,16 +28,20 @@ const Mapa = () => {
     });
 
     map.on('load', () => {
-      // Add bike lanes data as GeoJSON source
+
       map.addSource('bike-lanes', {
         type: 'geojson',
         data: {
           type: 'FeatureCollection',
+
+          //
+          // adiciona todas as stations de bikeLanesData como features 
+
           features: bikeLanesData.features.map(station => ({
             type: 'Feature',
             geometry: {
               type: 'Point',
-              coordinates: [station.lon, station.lat] // Ensure lon and lat are correct fields
+              coordinates: [station.lon, station.lat]
             },
             properties: {
               name: station.name,
