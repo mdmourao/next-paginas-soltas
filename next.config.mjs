@@ -7,8 +7,8 @@ export default {
   async rewrites() {
     return [
       {
-        source: '/proxy/station/availability',
-        destination: `http://localhost:3000/proxy/station/availability`,
+        source: '/api/gira/availability',
+        destination: `https://opendata.emel.pt/cycling/gira/station/availability`,
       },
     ];
   },
