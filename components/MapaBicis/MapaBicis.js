@@ -22,7 +22,7 @@ const Mapa = () => {
 
  
   const { dataHello, errorHello } = useSWR(`/api/hello`, fetcher)
-  
+  const { dataExample, errorExample } = useSWR(`/api/example`, fetcher)
 
 
   useEffect(() => {
