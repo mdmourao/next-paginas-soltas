@@ -3,9 +3,10 @@
 
 Problems with routes that use proxy or serverless to APIs:
 * Municipios page uses `useSWR` to fetch `https://api.carrismetropolitana.pt/[endpoint]`. works well!
-* GIRA has CORS limitations. built a proxy server. it fetches correctly. but the page does not manage receive the data. it shows continuously "Loading bikeLanesData..."  
 * IPMA has CORS limitations. `useSWR` is not working properly with proxy server, although proxy server is working well for GIRA pages. for IPMA weather, is not working, the JSON being imported from `/public/gira.json`.  
-* created serverless functions in `/app/api` folder. but is not working. for example, for GIRA, route `/api/gira/availability` is not answering, it shows continuously "Loading bikeLanesData..."  
+* [MapaBicis](https://github.com/ULHT-PW/next-paginas-soltas/blob/dea99b9f9957826cdc06b45a156032fb70817034/components/MapaBicis/MapaBicis.js#L20)
+  * GIRA has CORS limitations. built a proxy server. it fetches correctly. but the page does not manage receive the data. it shows continuously "Loading bikeLanesData..."  
+  * created serverless functions in `/app/api` folder. but is not working. for example, for GIRA, route `/api/gira/availability` is not answering, it shows continuously "Loading bikeLanesData..."  
 
 
 # Paginas soltas, Next.js App
